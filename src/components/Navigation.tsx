@@ -1,9 +1,11 @@
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isChinese, toggleLanguage } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -12,6 +14,31 @@ export const Navigation = () => {
     }
     setIsMenuOpen(false);
   };
+
+  const navItems = {
+    en: {
+      home: "Home",
+      services: "Services", 
+      about: "About",
+      team: "Team",
+      clients: "Clients",
+      links: "Links",
+      contact: "Contact",
+      toggleText: "中文"
+    },
+    zh: {
+      home: "首页",
+      services: "服务",
+      about: "关于我们", 
+      team: "团队",
+      clients: "客户",
+      links: "有用链接",
+      contact: "联系我们",
+      toggleText: "EN"
+    }
+  };
+
+  const currentLang = isChinese ? navItems.zh : navItems.en;
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
@@ -23,47 +50,62 @@ export const Navigation = () => {
             </div>
             <div>
               <div className="text-xl font-bold text-gray-800">Onn Chong</div>
-              <div className="text-sm text-teal-600">Chartered Professional Accountant</div>
+              <div className="text-sm text-teal-600">
+                {isChinese ? "注册专业会计师" : "Chartered Professional Accountant"}
+              </div>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex items-center space-x-6">
             <button 
               onClick={() => scrollToSection('home')}
               className="text-gray-700 hover:text-teal-600 transition-colors"
             >
-              Home
+              {currentLang.home}
             </button>
             <button 
               onClick={() => scrollToSection('services')}
               className="text-gray-700 hover:text-teal-600 transition-colors"
             >
-              Services
+              {currentLang.services}
             </button>
             <button 
               onClick={() => scrollToSection('about')}
               className="text-gray-700 hover:text-teal-600 transition-colors"
             >
-              About
+              {currentLang.about}
+            </button>
+            <button 
+              onClick={() => scrollToSection('team')}
+              className="text-gray-700 hover:text-teal-600 transition-colors"
+            >
+              {currentLang.team}
             </button>
             <button 
               onClick={() => scrollToSection('clients')}
               className="text-gray-700 hover:text-teal-600 transition-colors"
             >
-              Clients
+              {currentLang.clients}
             </button>
             <button 
               onClick={() => scrollToSection('links')}
               className="text-gray-700 hover:text-teal-600 transition-colors"
             >
-              Links
+              {currentLang.links}
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-gray-700 hover:text-teal-600 transition-colors"
             >
-              Contact
+              {currentLang.contact}
+            </button>
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center space-x-1 text-gray-700 hover:text-teal-600 transition-colors border border-gray-300 rounded-md px-3 py-1"
+            >
+              <Globe size={16} />
+              <span>{currentLang.toggleText}</span>
             </button>
           </div>
 
@@ -84,37 +126,50 @@ export const Navigation = () => {
                 onClick={() => scrollToSection('home')}
                 className="text-gray-700 hover:text-teal-600 transition-colors text-left"
               >
-                Home
+                {currentLang.home}
               </button>
               <button 
                 onClick={() => scrollToSection('services')}
                 className="text-gray-700 hover:text-teal-600 transition-colors text-left"
               >
-                Services
+                {currentLang.services}
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
                 className="text-gray-700 hover:text-teal-600 transition-colors text-left"
               >
-                About
+                {currentLang.about}
+              </button>
+              <button 
+                onClick={() => scrollToSection('team')}
+                className="text-gray-700 hover:text-teal-600 transition-colors text-left"
+              >
+                {currentLang.team}
               </button>
               <button 
                 onClick={() => scrollToSection('clients')}
                 className="text-gray-700 hover:text-teal-600 transition-colors text-left"
               >
-                Clients
+                {currentLang.clients}
               </button>
               <button 
                 onClick={() => scrollToSection('links')}
                 className="text-gray-700 hover:text-teal-600 transition-colors text-left"
               >
-                Links
+                {currentLang.links}
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-teal-600 transition-colors text-left"
               >
-                Contact
+                {currentLang.contact}
+              </button>
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center space-x-1 text-gray-700 hover:text-teal-600 transition-colors border border-gray-300 rounded-md px-3 py-1 w-fit"
+              >
+                <Globe size={16} />
+                <span>{currentLang.toggleText}</span>
               </button>
             </div>
           </div>
