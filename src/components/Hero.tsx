@@ -1,5 +1,40 @@
 
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export const Hero = () => {
+  const { isChinese } = useLanguage();
+
+  const content = {
+    en: {
+      title: "Professional",
+      titleHighlight: " Accounting ",
+      titleEnd: "Solutions",
+      subtitle: "Established in 2006, based in Downtown Kelowna. Expert financial guidance for individuals and businesses throughout the Okanagan Valley.",
+      testimonial: "Onn and his team are the most professional and thorough accounting services I've used for both my personal and business. I would highly recommend their services to any individual or business, you will not be disappointed!",
+      testimonialAuthor: "- Chelsie",
+      buttonText: "Get Started Today",
+      sectionTitle: "Succeeding Together",
+      sectionSubtitle: "Building success together",
+      acceptingClients: "We are accepting new clients.",
+      contactInfo: "Feel free to contact our office at (250) 868-8238 to book an appointment."
+    },
+    zh: {
+      title: "专业",
+      titleHighlight: "会计",
+      titleEnd: "解决方案",
+      subtitle: "成立于2006年，总部位于基洛纳市中心。为奥卡纳根谷的个人和企业提供专业的财务指导。",
+      testimonial: "Onn和他的团队是我用过的最专业和最彻底的会计服务，无论是个人还是企业。我会向任何个人或企业强烈推荐他们的服务，您不会失望的！",
+      testimonialAuthor: "- Chelsie",
+      buttonText: "立即开始",
+      sectionTitle: "携手成功",
+      sectionSubtitle: "共同成功",
+      acceptingClients: "我们正在接受新客户。",
+      contactInfo: "请随时致电我们的办公室 (250) 868-8238 预约。"
+    }
+  };
+
+  const currentContent = isChinese ? content.zh : content.en;
+
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -13,27 +48,27 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Professional
+              {currentContent.title}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-500">
-                {" "}Accounting{" "}
+                {currentContent.titleHighlight}
               </span>
-              Solutions
+              {currentContent.titleEnd}
             </h1>
             <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-              Established in 2006, based in Downtown Kelowna. Expert financial guidance for individuals and businesses throughout the Okanagan Valley.
+              {currentContent.subtitle}
             </p>
             <div className="mt-8 bg-white rounded-lg p-6 shadow-lg border-l-4 border-teal-400">
               <blockquote className="text-lg italic text-gray-700">
-                "Onn and his team are the most professional and thorough accounting services I've used for both my personal and business. I would highly recommend their services to any individual or business, you will not be disappointed!"
+                "{currentContent.testimonial}"
               </blockquote>
-              <p className="mt-3 text-teal-600 font-semibold">- Chelsie</p>
+              <p className="mt-3 text-teal-600 font-semibold">{currentContent.testimonialAuthor}</p>
             </div>
             <div className="mt-8">
               <button 
                 onClick={scrollToContact}
                 className="bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
               >
-                Get Started Today
+                {currentContent.buttonText}
               </button>
             </div>
           </div>
@@ -49,11 +84,11 @@ export const Hero = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Succeeding Together</h2>
-          <p className="text-xl text-gray-600">Building success together</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{currentContent.sectionTitle}</h2>
+          <p className="text-xl text-gray-600">{currentContent.sectionSubtitle}</p>
           <div className="mt-6 bg-teal-50 rounded-lg p-6 inline-block">
-            <p className="text-lg font-semibold text-teal-800">We are accepting new clients.</p>
-            <p className="text-gray-700 mt-2">Feel free to contact our office at (250) 868-8238 to book an appointment.</p>
+            <p className="text-lg font-semibold text-teal-800">{currentContent.acceptingClients}</p>
+            <p className="text-gray-700 mt-2">{currentContent.contactInfo}</p>
           </div>
         </div>
       </div>
