@@ -28,18 +28,12 @@ export const Hero = () => {
               </blockquote>
               <p className="mt-3 text-teal-600 font-semibold">- Chelsie</p>
             </div>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8">
               <button 
                 onClick={scrollToContact}
                 className="bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
               >
                 Get Started Today
-              </button>
-              <button 
-                onClick={() => window.open('tel:2508688238')}
-                className="border-2 border-teal-400 text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50 transition-colors"
-              >
-                Call Now
               </button>
             </div>
           </div>

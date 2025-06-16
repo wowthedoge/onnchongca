@@ -34,84 +34,98 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            The Amazing People Behind Our Success
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our experienced team of professionals is dedicated to providing exceptional accounting services
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">About Onn Chong Inc.</h3>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Onn Chong Inc. was established in 2006, and is based in Downtown Kelowna. 
-              As a Chartered Professional Accountant (CPA), we bring years of experience and expertise 
-              to help individuals and businesses navigate their financial challenges with confidence.
+    <>
+      <section id="about" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              About Onn Chong Inc.
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Professional accounting services established in 2006, serving the Okanagan Valley
             </p>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              We serve clients throughout the Okanagan Valley with personalized accounting solutions 
-              tailored to your unique needs, always committed to building success together.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-gray-900 mb-2">Established</h4>
-                <p className="text-gray-600">2006</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-gray-900 mb-2">Location</h4>
-                <p className="text-gray-600">Downtown Kelowna, BC</p>
-              </div>
-            </div>
           </div>
-          
-          <div className="relative">
-            <div className="bg-gradient-to-r from-teal-400 to-cyan-500 rounded-2xl p-1">
-              <div className="bg-white rounded-xl p-8 h-full">
-                <h4 className="text-2xl font-bold text-gray-900 mb-4">Why Choose Us?</h4>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-3"></div>
-                    <span className="text-gray-600">Personalized service tailored to your needs</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-3"></div>
-                    <span className="text-gray-600">Deep understanding of local regulations</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-3"></div>
-                    <span className="text-gray-600">Proactive approach to financial planning</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-3"></div>
-                    <span className="text-gray-600">Commitment to accuracy and integrity</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">{member.name.charAt(0)}</span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Onn Chong Inc. was established in 2006, and is based in Downtown Kelowna. 
+                As a Chartered Professional Accountant (CPA), we bring years of experience and expertise 
+                to help individuals and businesses navigate their financial challenges with confidence.
+              </p>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                We serve clients throughout the Okanagan Valley with personalized accounting solutions 
+                tailored to your unique needs, always committed to building success together.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-gray-900 mb-2">Established</h4>
+                  <p className="text-gray-600">2006</p>
                 </div>
-                <h4 className={`text-xl font-bold ${member.color}`}>{member.name}</h4>
-                <p className="text-gray-600 font-medium">{member.role}</p>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-gray-900 mb-2">Location</h4>
+                  <p className="text-gray-600">Downtown Kelowna, BC</p>
+                </div>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
             </div>
-          ))}
+            
+            <div className="relative">
+              <div className="bg-gradient-to-r from-teal-400 to-cyan-500 rounded-2xl p-1">
+                <div className="bg-white rounded-xl p-8 h-full">
+                  <h4 className="text-2xl font-bold text-gray-900 mb-4">Why Choose Us?</h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-3"></div>
+                      <span className="text-gray-600">Personalized service tailored to your needs</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-3"></div>
+                      <span className="text-gray-600">Deep understanding of local regulations</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-3"></div>
+                      <span className="text-gray-600">Proactive approach to financial planning</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-3"></div>
+                      <span className="text-gray-600">Commitment to accuracy and integrity</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              The Amazing People Behind Our Success
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our experienced team of professionals is dedicated to providing exceptional accounting services
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="bg-gray-50 rounded-xl p-6 shadow-lg">
+                <div className="text-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-white font-bold text-xl">{member.name.charAt(0)}</span>
+                  </div>
+                  <h4 className={`text-xl font-bold ${member.color}`}>{member.name}</h4>
+                  <p className="text-gray-600 font-medium">{member.role}</p>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };

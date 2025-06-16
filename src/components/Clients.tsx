@@ -1,5 +1,11 @@
 
-import { Building, Wrench, Coffee, Home, Car, Heart } from "lucide-react";
+import { 
+  Building, Wrench, Coffee, Home, Car, Heart, 
+  Stethoscope, GraduationCap, Music, Shield, 
+  Truck, DollarSign, Users, Sparkles, Calculator,
+  Hammer, Zap, Droplets, Factory, Laptop,
+  TreePine, Gift, MapPin, Baby, UserCheck
+} from "lucide-react";
 
 export const Clients = () => {
   const clientIndustries = [
@@ -19,7 +25,26 @@ export const Clients = () => {
     "Real Estate": Home,
     "Automotive Dealership": Car,
     "Health & Beauty": Heart,
-    "HVAC": Wrench
+    "HVAC": Wrench,
+    "Dental": Stethoscope,
+    "Education": GraduationCap,
+    "Entertainment": Music,
+    "Security": Shield,
+    "Trucking": Truck,
+    "Financial Services": DollarSign,
+    "HR": Users,
+    "Spa Maintenance & Services": Sparkles,
+    "Consulting": Calculator,
+    "Plumbing": Droplets,
+    "Electrician": Zap,
+    "Manufacturing": Factory,
+    "Software": Laptop,
+    "Lawncare": TreePine,
+    "Promotional Products Sales": Gift,
+    "City Planning": MapPin,
+    "School & Child Care": Baby,
+    "International Student Recruitment": UserCheck,
+    "Interior Design & Staging": Hammer
   };
 
   return (
