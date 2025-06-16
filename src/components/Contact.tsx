@@ -25,8 +25,8 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Address</h4>
-                  <p className="text-gray-600">Suite 302-570 Raymer Ave.</p>
-                  <p className="text-gray-600">Kelowna, BC V1Y 4Z5</p>
+                  <p className="text-gray-600">101 – 1358 St. Paul St.</p>
+                  <p className="text-gray-600">Kelowna, BC V1Y 2E1</p>
                 </div>
               </div>
 
@@ -49,6 +49,18 @@ export const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900">Fax</h4>
                   <p className="text-gray-600">778 478 3551</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-lg flex items-center justify-center">
+                  <Mail className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Email</h4>
+                  <a href="mailto:admin@onnchong.ca" className="text-teal-600 hover:text-teal-700">
+                    admin@onnchong.ca
+                  </a>
                 </div>
               </div>
 

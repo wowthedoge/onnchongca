@@ -28,7 +28,7 @@ export const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             <button 
               onClick={() => scrollToSection('home')}
               className="text-gray-700 hover:text-teal-600 transition-colors"
@@ -46,6 +46,18 @@ export const Navigation = () => {
               className="text-gray-700 hover:text-teal-600 transition-colors"
             >
               About
+            </button>
+            <button 
+              onClick={() => scrollToSection('clients')}
+              className="text-gray-700 hover:text-teal-600 transition-colors"
+            >
+              Clients
+            </button>
+            <button 
+              onClick={() => scrollToSection('links')}
+              className="text-gray-700 hover:text-teal-600 transition-colors"
+            >
+              Links
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -85,6 +97,18 @@ export const Navigation = () => {
                 className="text-gray-700 hover:text-teal-600 transition-colors text-left"
               >
                 About
+              </button>
+              <button 
+                onClick={() => scrollToSection('clients')}
+                className="text-gray-700 hover:text-teal-600 transition-colors text-left"
+              >
+                Clients
+              </button>
+              <button 
+                onClick={() => scrollToSection('links')}
+                className="text-gray-700 hover:text-teal-600 transition-colors text-left"
+              >
+                Links
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
