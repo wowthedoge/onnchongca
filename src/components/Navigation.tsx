@@ -32,7 +32,7 @@ export const Navigation = () => {
       about: "关于我们", 
       team: "团队",
       clients: "客户",
-      links: "有用链接",
+      links: "相关链接",
       contact: "联系我们",
       toggleText: "EN"
     }

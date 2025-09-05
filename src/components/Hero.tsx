@@ -22,13 +22,13 @@ export const Hero = () => {
       title: "专业",
       titleHighlight: "会计",
       titleEnd: "解决方案",
-      subtitle: "成立于2006年，总部位于基洛纳市中心。为奥卡纳根谷的个人和企业提供专业的财务指导。",
-      testimonial: "Onn和他的团队是我用过的最专业和最彻底的会计服务，无论是个人还是企业。我会向任何个人或企业强烈推荐他们的服务，您不会失望的！",
+      subtitle: "成立于2006年，位于基洛纳市中心。为奥卡纳根谷地区的个人和企业提供专业的财务指导。",
+      testimonial: "Onn和他的团队是我用过的最专业和最注重细节的会计服务，无论是针对个人还是企业。我会向任何个人或企业强烈推荐他们的服务，您不会失望的！",
       testimonialAuthor: "- Chelsie",
-      buttonText: "立即开始",
-      sectionTitle: "携手成功",
+      buttonText: "联系我们",
+      sectionTitle: "携手共进",
       sectionSubtitle: "共同成功",
-      acceptingClients: "我们正在接受新客户。",
+      acceptingClients: "欢迎新老客户联系我们",
       contactInfo: "请随时致电我们的办公室 (250) 868-8238 预约。"
     }
   };

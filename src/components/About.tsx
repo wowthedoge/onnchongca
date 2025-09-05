@@ -25,9 +25,9 @@ export const About = () => {
     },
     zh: {
       title: "关于 Onn Chong Inc.",
-      subtitle: "自2006年成立，为奥卡纳根谷提供专业会计服务",
-      description1: "Onn Chong Inc. 成立于2006年，总部位于基洛纳市中心。作为注册专业会计师(CPA)，我们拥有多年的经验和专业知识，帮助个人和企业自信地应对财务挑战。",
-      description2: "我们为整个奥卡纳根谷的客户提供个性化的会计解决方案，量身定制以满足您的独特需求，始终致力于共同成功。",
+      subtitle: "自2006年成立，为奥卡纳根谷地区提供专业会计服务",
+      description1: "Onn Chong Inc. 成立于2006年，位于基洛纳市中心。作为注册专业会计师(CPA)，我们拥有多年的经验和专业知识，帮助个人和企业自信地应对财务挑战。",
+      description2: "我们为整个奥卡纳根谷地区的客户提供个性化的会计解决方案，量身定制以满足您的独特需求，始终致力于共同成功。",
       established: "成立时间",
       location: "地址",
       locationValue: "基洛纳市中心，BC省",
@@ -80,13 +80,13 @@ export const About = () => {
       {
         name: "Onn Chong, CPA",
         role: "创始人兼负责人",
-        description: "Onn Chong从十几岁开始为家族企业做基础会计工作，开始了他的会计职业生涯。他在奥卡纳根大学学院完成学业，然后在基洛纳的一家全国性会计公司实习。在获得注册专业会计师资格后，他成立了Onn Chong Inc.。业余时间，他喜欢和家人在一起。",
+        description: "Onn Chong从青少年时期开始为家族企业做基础会计工作，开始了他的会计职业生涯。他在奥卡纳根大学学院完成学业，后在基洛纳的一家大型会计公司工作实习而在获得注册专业会计师资格。他成立了Onn Chong Inc.。业余时间，他喜欢和家人在一起。",
         color: "text-red-600"
       },
       {
         name: "Carol Peng, CPA", 
         role: "高级会计师",
-        description: "Carol Peng在基洛纳的一家全国性会计公司实习。",
+        description: "Carol Peng在基洛纳的一家大型会计公司工作实习于2011年后获得注册专业会计师资格。",
         color: "text-blue-600"
       },
       {
