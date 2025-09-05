@@ -45,15 +45,11 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">O</span>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-gray-800">Onn Chong Inc</div>
-              <div className="text-sm text-teal-600">
-                {isChinese ? "注册专业会计师" : "Chartered Professional Accountant"}
-              </div>
-            </div>
+            <img 
+              src="/lovable-uploads/OnnChong_Gradient_CMYK.png" 
+              alt="Onn Chong Inc Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

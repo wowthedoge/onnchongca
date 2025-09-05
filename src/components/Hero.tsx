@@ -75,7 +75,7 @@ export const Hero = () => {
           <div className="relative">
             <div className="bg-gradient-to-r from-teal-400 to-cyan-500 rounded-2xl p-8 shadow-2xl">
               <img 
-                src="/lovable-uploads/088decbc-ad63-4199-82cb-b94877a47a3a.png" 
+                src="/lovable-uploads/onnchongcard.png" 
                 alt="Onn Chong CPA Business Card" 
                 className="w-full rounded-lg shadow-lg"
               />
