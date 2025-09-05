@@ -10,7 +10,7 @@ export const UsefulLinks = () => {
     { name: "Service Canada", url: "https://www.canada.ca/en/employment-social-development/corporate/portfolio/service-canada.html" },
     { name: "Pharmacare", url: "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents" },
     { name: "Bank of Canada", url: "https://www.bankofcanada.ca/" },
-    { name: "Chartered Professional Accountants of BC", url: "https://www.cpabc.ca/" }
+    { name: "Chartered Professional Accountants of BC", url: "https://www.bccpa.ca" }
   ];
 
   return (

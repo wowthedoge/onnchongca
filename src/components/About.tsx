@@ -7,9 +7,9 @@ export const About = () => {
   const content = {
     en: {
       title: "About Onn Chong Inc.",
-      subtitle: "Professional accounting services established in 2006, serving the Okanagan Valley",
+      subtitle: "",
       description1: "Onn Chong Inc. was established in 2006, and is based in Downtown Kelowna. As a Chartered Professional Accountant (CPA), we bring years of experience and expertise to help individuals and businesses navigate their financial challenges with confidence.",
-      description2: "We serve clients throughout the Okanagan Valley with personalized accounting solutions tailored to your unique needs, always committed to building success together.",
+      description2: "We serve clients in Okanagan and beyond with personalized accounting solutions tailored to your unique needs.",
       established: "Established",
       location: "Location",
       locationValue: "Downtown Kelowna, BC",
@@ -17,7 +17,7 @@ export const About = () => {
       reasons: [
         "Personalized service tailored to your needs",
         "Deep understanding of local regulations", 
-        "Proactive approach to financial planning",
+        "Proactive approach to tax planning",
         "Commitment to accuracy and integrity"
       ],
       teamTitle: "The Amazing People Behind Our Success",

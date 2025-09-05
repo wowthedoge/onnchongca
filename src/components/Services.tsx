@@ -26,7 +26,7 @@ export const Services = () => {
           services: [
             "Tax Planning & Consulting",
             "Bookkeeping",
-            "T2 Corporate Income Tax Return",
+
             "T4 Statement of Remuneration Paid",
             "T5 Statement of Investment Income",
             "GST Returns",
@@ -40,7 +40,8 @@ export const Services = () => {
           services: [
             "Compilation of Financial Information",
             "Review of Financial Statements",
-            "T2 Corporate Income Tax Return"
+            "Corporate reorganization",
+            "Tax planning"
           ]
         },
         {

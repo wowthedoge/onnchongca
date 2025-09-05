@@ -49,7 +49,7 @@ export const Navigation = () => {
               <span className="text-white font-bold text-xl">O</span>
             </div>
             <div>
-              <div className="text-xl font-bold text-gray-800">Onn Chong</div>
+              <div className="text-xl font-bold text-gray-800">Onn Chong Inc</div>
               <div className="text-sm text-teal-600">
                 {isChinese ? "注册专业会计师" : "Chartered Professional Accountant"}
               </div>

@@ -9,14 +9,14 @@ export const Hero = () => {
       title: "Professional",
       titleHighlight: " Accounting ",
       titleEnd: "Solutions",
-      subtitle: "Established in 2006, based in Downtown Kelowna. Expert financial guidance for individuals and businesses throughout the Okanagan Valley.",
+      subtitle: "",
       testimonial: "Onn and his team are the most professional and thorough accounting services I've used for both my personal and business. I would highly recommend their services to any individual or business, you will not be disappointed!",
       testimonialAuthor: "- Chelsie",
       buttonText: "Get Started Today",
-      sectionTitle: "Succeeding Together",
+      sectionTitle: "",
       sectionSubtitle: "Building success together",
       acceptingClients: "We are accepting new clients.",
-      contactInfo: "Feel free to contact our office at (250) 868-8238 to book an appointment."
+      contactInfo: "Contact our office at (250) 868-8238 to book an appointment."
     },
     zh: {
       title: "专业",
@@ -37,7 +37,7 @@ export const Hero = () => {
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
-    if (element) {
+    if (element) {  
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
