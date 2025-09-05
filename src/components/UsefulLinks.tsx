@@ -1,16 +1,19 @@
 
 import { ExternalLink } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const UsefulLinks = () => {
+  const { isChinese } = useLanguage();
+  
   const links = [
-    { name: "Canada Revenue Agency", url: "https://www.canada.ca/en/revenue-agency.html" },
-    { name: "BC Provincial Sales Tax", url: "https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst" },
-    { name: "BC Employment Standards", url: "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice" },
-    { name: "WorkSafe BC", url: "https://www.worksafebc.com/" },
-    { name: "Service Canada", url: "https://www.canada.ca/en/employment-social-development/corporate/portfolio/service-canada.html" },
-    { name: "Pharmacare", url: "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents" },
-    { name: "Bank of Canada", url: "https://www.bankofcanada.ca/" },
-    { name: "Chartered Professional Accountants of BC", url: "https://www.bccpa.ca" }
+    { name: isChinese ? "加拿大税务局" : "Canada Revenue Agency", url: "https://www.canada.ca/en/revenue-agency.html" },
+    { name: isChinese ? "BC省销售税" : "BC Provincial Sales Tax", url: "https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst" },
+    { name: isChinese ? "BC省就业标准" : "BC Employment Standards", url: "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice" },
+    { name: isChinese ? "BC工作安全局" : "WorkSafe BC", url: "https://www.worksafebc.com/" },
+    { name: isChinese ? "加拿大服务中心" : "Service Canada", url: "https://www.canada.ca/en/employment-social-development/corporate/portfolio/service-canada.html" },
+    { name: isChinese ? "药物保健计划" : "Pharmacare", url: "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents" },
+    { name: isChinese ? "加拿大银行" : "Bank of Canada", url: "https://www.bankofcanada.ca/" },
+    { name: isChinese ? "BC省特许专业会计师协会" : "Chartered Professional Accountants of BC", url: "https://www.bccpa.ca" }
   ];
 
   return (
@@ -18,10 +21,10 @@ export const UsefulLinks = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Useful Links
+            {isChinese ? "实用链接" : "Useful Links"}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Important resources and government agencies for your business and personal needs
+            {isChinese ? "您企业和个人需求的重要资源和政府机构" : "Important resources and government agencies for your business and personal needs"}
           </p>
         </div>
 

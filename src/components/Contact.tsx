@@ -2,8 +2,10 @@
 import { MapPin, Phone, Mail, Globe } from "lucide-react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Contact = () => {
+  const { isChinese } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -56,16 +58,16 @@ export const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Get In Touch
+            {isChinese ? "联系我们" : "Get In Touch"}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to take control of your finances? Contact us today for a consultation.
+            {isChinese ? "准备好掌控您的财务了吗？今天就联系我们进行咨询。" : "Ready to take control of your finances? Contact us today for a consultation."}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">{isChinese ? "联系信息" : "Contact Information"}</h3>
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
@@ -73,7 +75,7 @@ export const Contact = () => {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Address</h4>
+                  <h4 className="font-semibold text-gray-900">{isChinese ? "地址" : "Address"}</h4>
                   <p className="text-gray-600">101 – 1358 St. Paul St.</p>
                   <p className="text-gray-600">Kelowna, BC V1Y 2E1</p>
                 </div>
@@ -84,7 +86,7 @@ export const Contact = () => {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Phone</h4>
+                  <h4 className="font-semibold text-gray-900">{isChinese ? "电话" : "Phone"}</h4>
                   <a href="tel:2508688238" className="text-teal-600 hover:text-teal-700">
                     250 868 8238
                   </a>
@@ -96,7 +98,7 @@ export const Contact = () => {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Fax</h4>
+                  <h4 className="font-semibold text-gray-900">{isChinese ? "传真" : "Fax"}</h4>
                   <p className="text-gray-600">778 478 3551</p>
                 </div>
               </div>
@@ -106,7 +108,7 @@ export const Contact = () => {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Email</h4>
+                  <h4 className="font-semibold text-gray-900">{isChinese ? "电子邮件" : "Email"}</h4>
                   <a href="mailto:admin@onnchong.ca" className="text-teal-600 hover:text-teal-700">
                     admin@onnchong.ca
                   </a>
@@ -118,7 +120,7 @@ export const Contact = () => {
                   <Globe className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Website</h4>
+                  <h4 className="font-semibold text-gray-900">{isChinese ? "网站" : "Website"}</h4>
                   <a href="https://www.onnchong.ca" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">
                     www.onnchong.ca
                   </a>
@@ -128,27 +130,27 @@ export const Contact = () => {
           </div>
 
           <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">{isChinese ? "发送消息" : "Send a Message"}</h3>
             
             {/* Success/Error Messages */}
             {submitStatus === "success" && (
               <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                <p className="font-medium">Message sent successfully!</p>
-                <p className="text-sm">We'll get back to you soon.</p>
+                <p className="font-medium">{isChinese ? "消息发送成功！" : "Message sent successfully!"}</p>
+                <p className="text-sm">{isChinese ? "我们会尽快回复您。" : "We'll get back to you soon."}</p>
               </div>
             )}
             
             {submitStatus === "error" && (
               <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
-                <p className="font-medium">Failed to send message</p>
-                <p className="text-sm">Please try again or contact us directly.</p>
+                <p className="font-medium">{isChinese ? "发送消息失败" : "Failed to send message"}</p>
+                <p className="text-sm">{isChinese ? "请重试或直接联系我们。" : "Please try again or contact us directly."}</p>
               </div>
             )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Full Name *
+                  {isChinese ? "全名 *" : "Full Name *"}
                 </label>
                 <input
                   type="text"
@@ -158,13 +160,13 @@ export const Contact = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  placeholder="Your full name"
+                  placeholder={isChinese ? "您的全名" : "Your full name"}
                 />
               </div>
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address *
+                  {isChinese ? "电子邮件地址 *" : "Email Address *"}
                 </label>
                 <input
                   type="email"
@@ -174,13 +176,13 @@ export const Contact = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  placeholder="your.email@example.com"
+                  placeholder={isChinese ? "您的邮箱@example.com" : "your.email@example.com"}
                 />
               </div>
               
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
+                  {isChinese ? "电话号码" : "Phone Number"}
                 </label>
                 <input
                   type="tel"
@@ -195,7 +197,7 @@ export const Contact = () => {
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
+                  {isChinese ? "消息 *" : "Message *"}
                 </label>
                 <textarea
                   id="message"
@@ -205,7 +207,7 @@ export const Contact = () => {
                   required
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  placeholder="Tell us about your accounting needs..."
+                  placeholder={isChinese ? "告诉我们您的会计需求..." : "Tell us about your accounting needs..."}
                 ></textarea>
               </div>
               
@@ -214,7 +216,7 @@ export const Contact = () => {
                 disabled={isSubmitting}
                 className="w-full bg-gradient-to-r from-teal-400 to-cyan-500 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? (isChinese ? "发送中..." : "Sending...") : (isChinese ? "发送消息" : "Send Message")}
               </button>
             </form>
           </div>
