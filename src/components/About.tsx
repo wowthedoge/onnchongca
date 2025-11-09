@@ -54,25 +54,25 @@ export const About = () => {
       {
         name: "Carol Peng, CPA",
         role: "Senior Accountant",
-        description: "Carol Peng articled in a national accounting firm in Kelowna.",
+        description: "Since moving to Kelowna in 2003, Carol has built a career dedicated to helping businesses thrive. After completing articles with a national accounting firm—where they worked extensively in both the Small Business and Tax groups— Carol earned the Chartered Professional Accountant (CPA) designation in 2015. Today, Carol combines that national-firm training with a local's perspective, providing clients with expert tax and accounting advice tailored to the unique economic landscape of the Okanagan.",
         color: "text-blue-600"
       },
       {
         name: "Fiona Li",
         role: "Accountant",
-        description: "Dedicated team member contributing to our comprehensive accounting services.",
+        description: "Fiona started work at Onn Chong Inc. in the spring of 2022. She completed her accounting certificate program at Okanagan College. Before transitioning into accounting, she worked as a software specialist at one of the major banks in China. Fiona enjoys helping clients make sense of their finances and supporting them with clear, reliable information. In her spare time, she enjoys exploring the Okanagan and spending time with her family.",
         color: "text-green-600"
       },
       {
         name: "Elaine Gu",
         role: "Accountant", 
-        description: "Experienced professional providing quality accounting solutions.",
+        description: "Elaine Gu is a skilled accounting professional with experience working as an accountant in both China and Canada. After graduating from Okanagan College in 2020 with a focus in Accounting, she joined Onn Chong Inc, where she supports financial reporting, reconciliation, and bookkeeping. Proficient in Sage 50 and Quickbooks Online, Elaine is dedicated to accuracy, efficiency and ensuring compliance in all financial operations.",
         color: "text-purple-600"
       },
       {
         name: "Venus Leung",
         role: "Accountant",
-        description: "Committed to delivering exceptional client service and accurate financial reporting.",
+        description: "After building a 15-year foundation across various industries, I've chosen to return my focus and expertise to accounting.\nMy goal is simple: to utilize that wide-ranging experience to deliver exceptional clarity and unwavering commitment to every financial task.",
         color: "text-pink-600"
       }
     ],
@@ -86,25 +86,25 @@ export const About = () => {
       {
         name: "Carol Peng, CPA", 
         role: "高级会计师",
-        description: "Carol Peng在基洛纳的一家大型会计公司工作实习于2011年后获得注册专业会计师资格。",
+        description: "自 2003 年搬到基洛纳以来，Carol 一直致力于帮助企业蓬勃发展。她在一家全国性的会计师事务所完成实习期间，曾在中小企业组和税务组积累了丰富经验，并于 2015 年获得特许专业会计师（CPA）资格。如今，Carol 将在全国性会计师事务所获得的专业培训与本地视角相结合，为客户提供专业的税务与会计咨询，量身定制适应奥肯那根独特经济环境的解决方案。",
         color: "text-blue-600"
       },
       {
         name: "Fiona Li",
         role: "会计师",
-        description: "专门的团队成员，为我们提供全面的会计服务。",
+        description: "Fiona 于 2022 年春天加入 Onn Chong Inc.。她在奥肯那根学院完成了会计证书课程。在转入会计领域之前，她曾在中国的一家大型银行担任软件专员。Fiona 热衷于帮助客户理解他们的财务状况，并通过清晰、可靠的信息给予支持。闲暇时，她喜欢探索奥肯那根地区，并与家人共度时光。",
         color: "text-green-600"
       },
       {
         name: "Elaine Gu",
         role: "会计师",
-        description: "经验丰富的专业人士，提供优质的会计解决方案。",
+        description: "Elaine Gu 是一位经验丰富的会计专业人士，曾在中国和加拿大担任会计工作。她于 2020 年毕业于奥肯那根学院，主修会计专业。同年，她加入 Onn Chong Inc.，负责财务报告、对账和簿记工作。Elaine 精通 Sage 50 和 QuickBooks Online，始终以准确、高效和合规为目标，确保所有财务操作的专业性。",
         color: "text-purple-600"
       },
       {
         name: "Venus Leung", 
         role: "会计师",
-        description: "致力于提供卓越的客户服务和准确的财务报告。",
+        description: "在多个行业积累了 15 年的坚实基础之后，我选择重新将重心和专业知识投入到会计领域。我的目标很简单：运用那广泛的经验，为每一项财务工作提供卓越的清晰度与始终如一的专业承诺。",
         color: "text-pink-600"
       }
     ]
